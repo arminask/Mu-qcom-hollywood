@@ -9,7 +9,7 @@ This repo brings UEFI Firmware on your Device (If supported) to boot OSs like Wi
 ## How to build UEFI for Quest 2 (codename: hollywood)
 
 1. Setup build environment (in resources, "Building" guide)
-2. Build UEFI for Quest 2 with command:
+2. Build UEFI for Quest 2 with command (Or skip building and download the image from releases):
 ```
 ./build_uefi.sh -d hollywood --release DEBUG
 ```
