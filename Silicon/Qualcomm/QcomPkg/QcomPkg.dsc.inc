@@ -89,7 +89,7 @@
   gEfiMdePkgTokenSpaceGuid.PcdPlatformBootTimeOut|5
 
   # FrameBuffer Delay
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferDelay|10000          # In Microseconds
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferDelay|300000          # In Microseconds
 
   # Max Freq for CPUs
   gQcomPkgTokenSpaceGuid.PcdEnableMaxFreq|FALSE
