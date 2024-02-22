@@ -1,0 +1,11 @@
+[Defines]
+  DEC_SPECIFICATION                   = 0x00010005
+  PACKAGE_NAME                        = hollywood
+  PACKAGE_GUID                        = 2085688f-c531-4968-9e88-44937663d977
+  PACKAGE_VERSION                     = 0.1
+
+[Includes.common]
+  Include                               # Root include for the package
+
+[Guids.common]
+  ghollywoodTokenSpaceGuid               = { 0x1ead32ce, 0x3165, 0x49eb, { 0xa9, 0x2d, 0xe8, 0x8a, 0x42, 0x57, 0x20, 0x02 } }
