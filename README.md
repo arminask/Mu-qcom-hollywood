@@ -6,18 +6,6 @@
 
 This repo brings UEFI Firmware on your Device (If supported) to boot OSs like Windows or Linux.
 
-## How to build UEFI for Quest 2 (codename: hollywood)
-
-1. Setup build environment (in resources, "Building" guide)
-2. Build UEFI for Quest 2 with command (Or skip building and download the image from releases):
-```
-./build_uefi.sh -d hollywood --release DEBUG
-```
-3. Boot the generated Mu-hollywood.img with fastboot:
-```
-fastboot boot Mu-hollywood.img
-```
-4. It probably won't boot the first time and there will be errors, please send the log errors to me, I will try to fix it (I can't test with my own Quest 2, locked bootloader)
 <!--
 ## Other WoA Projects from us
 
