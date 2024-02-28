@@ -59,12 +59,12 @@
   gQcomPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Quest 2"
 
   # Simple FrameBuffer
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|3664
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1920
-  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferColorDepth|24
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1920
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|3664
+  gQcomPkgTokenSpaceGuid.PcdMipiFrameBufferColorDepth|32
 
   # Dynamic RAM
-  #gQcomPkgTokenSpaceGuid.PcdRamPartitionBase|0xF0900000
+  gQcomPkgTokenSpaceGuid.PcdRamPartitionBase|0xB0000000
 
   # SD Card
   gQcomPkgTokenSpaceGuid.PcdSDCardSlotPresent|FALSE
@@ -73,13 +73,13 @@
   gQcomPkgTokenSpaceGuid.PcdUSBInitOnBoot|TRUE
 
 [PcdsDynamicDefault.common]
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|3664
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|1920
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|3664
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|1920
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|458
-  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|51
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|458
-  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|51
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution|1920
+  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution|3664
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoHorizontalResolution|1920
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupVideoVerticalResolution|3664
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutColumn|240
+  gEfiMdeModulePkgTokenSpaceGuid.PcdSetupConOutRow|193
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutColumn|240
+  gEfiMdeModulePkgTokenSpaceGuid.PcdConOutRow|193
 
 !include SM8250Pkg/SM8250Pkg.dsc.inc

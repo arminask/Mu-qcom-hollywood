@@ -1,30 +1,22 @@
   INF MdeModulePkg/Core/Dxe/DxeMain.inf
   INF MdeModulePkg/Universal/PCD/Dxe/Pcd.inf
-
   INF ArmPkg/Drivers/CpuDxe/CpuDxe.inf
-
   INF MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf
   INF MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf
 
-  INF Binaries/hollywood/QcomPkg/Drivers/SecRSADxe/SecRSADxe.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/VerifiedBootDxe/VerifiedBootDxe.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/TzDxe/ScmDxeLA.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
+  #INF Binaries/hollywood/QcomPkg/Drivers/TzDxe/ScmDxeLA.inf
+  #INF Binaries/hollywood/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
 
   INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
   INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
-  INF Binaries/hollywood/MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/RscRtDxe.inf
-  INF Binaries/hollywood/MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/SCHandlerRtDxe.inf
-
-  INF Binaries/hollywood/QcomPkg/Drivers/VariableDxe/VariableDxe.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/SimpleTextInOutSerialDxe/SimpleTextInOutSerial.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/ResetRuntimeDxe/ResetRuntimeDxe.inf
-
+  INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
+  INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
+  INF MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf
+  INF EmbeddedPkg/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
+  INF EmbeddedPkg/SimpleTextInOutSerial/SimpleTextInOutSerial.inf
+  INF MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf
   INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
   INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
-
   INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
   INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
   INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
@@ -50,19 +42,16 @@
   INF Binaries/hollywood/QcomPkg/Drivers/CmdDbDxe/CmdDbDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/PwrUtilsDxe/PwrUtilsDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/RpmhDxe/RpmhDxe.inf
-
 !if $(USE_DISPLAYDXE) == 1
-  INF Binaries/a52sxq/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
+	INF Binaries/hollywood/QcomPkg/Drivers/CPRDxe/CPRDxe.inf
 !endif
-  INF Binaries/hollywood/QcomPkg/Drivers/PdcDxe/PdcDxe.inf
 
-  INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
-  INF MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
+  INF Binaries/hollywood/QcomPkg/Drivers/PdcDxe/PdcDxe.inf
+  INF Binaries/hollywood/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
+  INF Binaries/hollywood/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf
 
   INF FatPkg/EnhancedFatDxe/Fat.inf
-
   INF MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf
-  INF Binaries/hollywood/MdeModulePkg/Universal/FvSimpleFileSystemDxe/FvSimpleFileSystemDxe.inf
 
   INF Binaries/hollywood/QcomPkg/Drivers/DALSYSDxe/DALSYSDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
@@ -77,14 +66,15 @@
   INF Binaries/hollywood/QcomPkg/Drivers/SPIDxe/SPIDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/SPMIDxe/SPMIDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/SdccDxe/SdccDxe.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
+  #INF Binaries/hollywood/QcomPkg/Drivers/UFSDxe/UFSDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/TLMMDxe/TLMMDxe.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/FeatureEnablerDxe/FeatureEnablerDxe.inf
+
+  #INF Binaries/hollywood/QcomPkg/Drivers/FeatureEnablerDxe/FeatureEnablerDxe.inf
 
 !if $(USE_DISPLAYDXE) == 1
-  INF Binaries/hollywood/QcomPkg/Drivers/DisplayDxe/DisplayDxe.inf
+	INF Binaries/hollywood/QcomPkg/Drivers/DisplayDxe/DisplayDxe.inf
 !else
-  INF QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
+	INF QcomPkg/Drivers/SimpleFbDxe/SimpleFbDxe.inf
 !endif
 
   INF Binaries/hollywood/QcomPkg/Drivers/PlatformInfoDxe/PlatformInfoDxe.inf
@@ -114,9 +104,10 @@
   INF Binaries/hollywood/QcomPkg/Drivers/CipherDxe/CipherDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/MacDxe/MacDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/RNGDxe/RngDxe.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/QcomBds/QcomBds.inf
-  INF Binaries/hollywood/QcomPkg/Drivers/PILDxe/PILDxe.inf
+
+  INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
+
+  #INF Binaries/hollywood/QcomPkg/Drivers/PILDxe/PILDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/PILProxyDxe/PILProxyDxe.inf
   INF Binaries/hollywood/QcomPkg/Drivers/SPSSDxe/SPSSDxe.inf
-  INF Binaries/hollywood/QcomPkg/Application/QcomChargerApp/QcomChargerApp.inf
   INF Binaries/hollywood/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
